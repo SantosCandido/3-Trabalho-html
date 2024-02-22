@@ -1,0 +1,58 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+
+
+/* Text Align */
+.txt-right{ text-align: right; }
+.txt-center{ text-align: center; }
+.txt-left{ text-align: left; }
+
+
+/* Div Espaçamento */
+.row{ display: table; width: 100%}
+.row80{ display: table; width: 80%; padding-left: 10%;}
+.col{ display: table-cell; vertical-align: top; }
+.col-1{ width: 8.33%; }
+.col-2{ width: 16.66%; }
+.col-3{ width: 25%; }
+.col-4{ width: 33.33%; }
+.col-5{ width: 41.66%; }
+.col-6{ width: 50%; }
+.col-7{ width: 58.33%; }
+.col-8{ width: 66.66%; }
+.col-9{ width: 75%; }
+.col-10{ width: 83.33%; }
+.col-11{ width: 91.66%; }
+.col-12{ width: 100%; }
+
+
+/* Cores */
+:root{
+    --corverescuro: #820300;
+    --corverclaro: #B80000;
+    --coramar: #FF9800;
+    --corverd: #5F8670;
+}
+
+
+
+
+
+
+
+
+
+
+/* Div Positions */
+.container{
+    position: relative;
+    text-align: center;
+}
+/* First Topic */
+.firstTopic{
+  position: absolute;
+  top: 52%;
+  left: 68%;
+  transform: translate(-50%, -50%);
+}
