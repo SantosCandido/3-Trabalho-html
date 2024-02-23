@@ -36,23 +36,18 @@
 }
 
 
-
-
-
-
-
-
-
-
-/* Div Positions */
-.container{
-    position: relative;
-    text-align: center;
+/* Animações */
+.animate {
+  animation-duration: 1.8s;
+  animation-name: animate-fade;
+  animation-delay: 0s;
+  animation-fill-mode: backwards;
 }
-/* First Topic */
-.firstTopic{
-  position: absolute;
-  top: 52%;
-  left: 68%;
-  transform: translate(-50%, -50%);
+
+@keyframes animate-fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
+.delay-1 { animation-delay: 0.6s; }  
+.delay-2 { animation-delay: 0.7s; }
+.delay-3 { animation-delay: 0.8s; }

@@ -1,26 +1,98 @@
-
 body {
     margin: 0;
     background-image: url(../images/background.png);
     background-image: repeating-radial-gradient();
-
 }
 
 
+/* login */
+.box {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(254, 126, 126, 0.7);
+    transition: all 0.5s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+.box:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.box-close {
+    font-size: 2.5rem;
+    position: fixed;
+    top: 36%;
+    right: 41%;
+    color: #fe0606;
+    text-decoration: none;
+    
+}
+
+
+.box_background {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 1);
+    width: 20%;
+    height: 29%;
+    position: fixed;
+}
+
+
+.conteudo_box {
+    padding: 15%;
+}
+
+
+.conteudo_box input {
+    width: 92%;
+    padding: 3%;
+    margin-bottom: 5%;
+    border: 0.1rem solid #ccc;
+    border-radius: 4px;
+}
+
+
+.conteudo_box button {
+    background-color: var(--corverclaro);
+    font-size: 1.2rem;
+    color: #ffffff;
+    padding: 4%;
+    margin-top: 4%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+.conteudo_box button:hover {
+    background-color: var(--corverescuro);
+}
+
+
+/* nav */
 .nav_bar {
     overflow: hidden;
     background-color: var(--corverescuro);
     position: fixed;
-    /* Set the navbar to fixed position */
     top: 0;
-    /* Position the navbar at the top of the page */
     width: 100%;
-    /* Full width */
     box-shadow: 0 2px 2px rgba(0,0,0,.15);
 }
 
 
-.nav_bar a, .nav_bar p {
+.nav_bar a{
     float: left;
     display: block;
     color: white;
@@ -29,11 +101,34 @@ body {
 }
 
 
-.nav_bar p{
+.nav_bar a:last-child{
+    margin-right: 0%;
+}
+
+
+.navigation{
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.7rem;
+    text-align: center;
+    margin-right: 2%;
+    padding: 0.3% 0.5% 0.3% 0.5%;
+    border-radius: 12px;
+}
+
+
+.navigation:hover{
+    cursor: pointer;
+    background-color:rgba(184, 0, 0, 1);
+}
+
+
+.empresa{
     font-family: "Fredericka the Great", serif;
     font-weight: 400;
     margin: auto;
-    margin-right: 20%;
+    margin-right: 39%;
     font-style: normal; 
     padding-top: 0%;
     font-size: 2.5rem;
@@ -41,24 +136,8 @@ body {
 }
 
 
-.nav_bar a{
-    font-family: "Protest Revolution", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.7rem;
-    text-align: center;
-    margin-right: 2%;
-    margin-bottom: 0.2%;
-    background-color: rgba(184, 0, 0, 0.5); 
-    padding: 0.3% 0.5% 0.3% 0.5%;
-    border-radius: 12px;
-    
-}
-
-
-.nav_bar a:hover{
-    cursor: pointer;
-    background-color:rgba(184, 0, 0, 1);
+.empresa:hover{
+    cursor: pointer;   
 }
 
 
@@ -67,6 +146,7 @@ body {
 }
 
 
+/* banner */
 .home_banner {
     background-image: url("/assets/images/banner.png");
     background-position: center;
@@ -80,24 +160,42 @@ body {
 .home_banner h1, .home_banner h3{
     font-size: 3rem;
     color: white;
-    text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black,
-        1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+    text-shadow: 0 0 5px #fff, 0 0 10px black, 0 0 15px black, 0 0 20px black, 0 0 25px black, 0 0 30px black, 0 0 35px black;
 }
-.home_banner h1{
-    
-    font-size: 5rem;
-    margin-left: 18%;
-    padding-top: 5%;
-}
-.home_banner h3{
 
+
+.home_banner h1{
+    font-size: 5rem;
+    margin-left: 17.5%;
+    padding-top: 4%;   
+}
+
+
+.home_banner h3{
     margin-left: 58%;
 }
-.home_banner p{
 
-    padding-top: 3%;
-    margin-left: 1%;
-    font-size: 1rem;
+
+.home_banner p{
+    text-align: right;
+    font-size: 0.8rem;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    padding-top: 3.5%;
+    padding-right: 10%;
+}
+
+
+/* produtos */
+.best_sellers{
+    padding: 15% 5% 24% 5%;
+    font-size: 5rem;
+    color: white;
+    border-radius: 12px;
+    background-color: var(--corverescuro);
+    box-shadow: 2px 3px rgba(0,0,0,.15);
+    margin: 6%;
+    margin-top: 9%;
 }
 .produto{
     border-radius: 12px;
@@ -115,14 +213,15 @@ body {
 }
 .produto img{
     border-radius: 12px;
-    padding-top: 4%;
-    margin: auto;
+    padding-top: 10%;
+    margin: 10%;
     display: block;
     width: 70%;
 }
 .produto h4{
     font-size: 1.5rem;
-    text-align: center;
+    text-align: left;
+    margin-left: 10%;
     color: var(--corverclaro);}
 
 .produto p{
@@ -133,21 +232,66 @@ body {
 .produto button{
     border: 0;
     background-color: var(--corverd);
-    width: 100%;
-    padding: 4% 0% 4% 0%;
+    width: 85%;
+    height: 3rem;
+    margin: 8%;
     font-size: 1.3rem;
-    border-radius: 0px 0px 12px 12px;
+    border-radius: 12px;
 }
 .produto button:hover{
     background-color: #7DAB94;
 }
 
+.produto .drop-down ul {
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: calc(100% + 30px);
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    padding: 10px 0;
+    background: #fff;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    transition: 0.3s;
+  }
+
+
+/*  */
 .f1{
+    border-radius: 12px;
+    box-shadow: 2px 3px rgba(0,0,0,.15);
+    padding: 9% 1% 12% 1%;
     background-color: var(--corverd);
+    margin-right: 2.5%;
+}
+.f1 p{
+   
+    text-align: center;
+    font-size: 3.5rem;
+    color: white;
 }
 .f2{
+    border-radius: 12px;
+    box-shadow: 2px 3px rgba(0,0,0,.15);
+    padding: 9% 1% 9% 1%;
+    text-align: center;
+    font-size: 3.5rem;
+    color: white;
+    margin: 0 2.5% 0 2.5%;
     background-color: var(--coramar);
 }
 .f3{
+    border-radius: 12px;
+    box-shadow: 2px 3px rgba(0,0,0,.15);
+    text-align: center;
+    padding: 10%;
+    margin-left: 2.5%;
     background-color: var(--corverclaro);
+}
+.f3 input{
+   
+    font-size: 2rem;
+    border-color: var(--corverescuro);
+    color: white;
 }
