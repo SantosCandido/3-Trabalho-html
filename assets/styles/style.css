@@ -1,7 +1,7 @@
 /* screen size */
 @media only screen and (max-width: 1900px) {
     .ecra_nav{
-        margin-right: 8% !important;
+        margin-right: 20% !important;
     }
 }
 
@@ -163,9 +163,9 @@ body{
     font-family: "Fredericka the Great", serif;
     font-weight: 400;
     line-height: 100%;
-    transition: margin 0.5s ease;
+    transition: margin 1s ease;
     font-style: normal; 
-    margin: -0.5% 45% -0.5% 0%;
+    margin: -0.5% 46% -0.5% 0%;
     font-size: 2.5rem;
     color: white;
 }
@@ -301,7 +301,6 @@ body{
     text-align: left;
     margin: 0% 10%;
     color: var(--corverclaro);
-    margin-bottom: auto;
 }
 
 
@@ -314,6 +313,7 @@ body{
     width: 85%;
     height: 3rem;
     margin-left: 8%;
+    margin-bottom: 8%;
     font-size: 1.3rem;
     border-radius: 12px;
 }
