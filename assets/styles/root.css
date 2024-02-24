@@ -12,6 +12,7 @@
 /* Div Espaçamento */
 .row{ display: table; width: 100%}
 .row80{ display: table; width: 80%; padding-left: 10%;}
+.row83{ display: table; width: 83%; padding-left: 8.5%;}
 .col{ display: table-cell; vertical-align: top; }
 .col-1{ width: 8.33%; }
 .col-2{ width: 16.66%; }
@@ -37,14 +38,15 @@
 
 
 /* Animações */
-.animate {
+.animate{
   animation-duration: 1.8s;
   animation-name: animate-fade;
   animation-delay: 0s;
   animation-fill-mode: backwards;
 }
 
-@keyframes animate-fade {
+
+@keyframes animate-fade{
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
