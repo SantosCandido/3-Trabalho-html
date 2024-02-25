@@ -371,17 +371,47 @@ body{
     margin: 0 2.5% 0 2.5%;
     background-color: var(--coramar);
 }
+
 .f3{
+    color: white;
     border-radius: 12px;
     box-shadow: 2px 3px rgba(0,0,0,.15);
-    text-align: center;
     padding: 10%;
     margin-left: 2.5%;
     background-color: var(--corverclaro);
 }
 .f3 input{
-   
-    font-size: 2rem;
-    border-color: var(--corverescuro);
+    border-radius: 12px;
+    margin: 2%;
+    border: 0;
+    font-size: 2rem;;
+    background-color: rgba(255, 255, 255, 0.5);
     color: white;
+}
+.f3 p{
+    font-size: 1.1rem;
+}
+
+
+.submit_button{
+    margin-top: 3%;
+    background-color: var(--corverd);
+    border-radius: 12px;
+    color: white;
+    border: 0;
+    font-size: 2rem;
+}
+.submit_button:hover{
+    background-color: #7DAB94;
+}
+
+
+
+/* PAGINA PRODUTOS*/
+.menu_title{
+    font-family: "Fredericka the Great", serif;
+    font-weight: bold;
+    color: var(--corverescuro);
+    margin:0 0 0 3%;
+    font-size: 3.2rem;
 }
