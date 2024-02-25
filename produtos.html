@@ -1,20 +1,443 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dropdown Selection</title>
+    <title>PizzaPlace</title>
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.5.1-web/css/all.css">
+    <link rel="icon" type="image/x-icon" href="/assets/images/pizza-slice-solid.svg">
+    <link rel="stylesheet" href="./assets/styles/root.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="localizacoes.html">
+    <link rel="stylesheet" href="especiais.html">
+    <link rel="stylesheet" href="produtos.html">    
 </head>
 <body>
+    <nav class="nav_bar">
+        <ul class="row80">
+            <a class="empresa ecra_nav" href="index.html">Pizza<i class="fa-solid fa-pizza-slice"></i><br>Place</a>   
+            <div class="ecra1200">
+                <a class="navigation" href="index.html">Home</a>
+                <a class="navigation" href="produtos.html">Produtos</a>
+                <a class="navigation" href="especiais.html">Especiais</a>
+                <a class="navigation" href="localizacoes.html">Localizações</a>
+                <a class="navigation" href="#popup-box">Login</a>
+            </div> 
+        </ul>        
+    </nav>
 
-<label for="cars">Choose a car:</label>
+    <section class="row83" style="margin-top: 10%;">
+        <h1 class="menu_title">O Nosso Menu</h1>
+        <div class="row">
+            <div class="col col-2">
+                <div class="produto">
+                    <img src="Assets/images/Pizzas/Pizzas (2).png">
+                    <p class="">Pizza Ananás</p>
+                    <div class="propriedades">
+                        <label for="tamanhos"></label>
+                        <select id="tamanhos" name="tamanhos">
+                            <option value="pequena">Pequena</option>
+                            <option value="media">Média</option>
+                            <option value="grande">Grande</option>
+                            <option value="familiar">Familiar</option>
+                        </select>
+                    </div>
+                    <div class="propriedades">
+                        <label for="massas"></label>
+                        <select id="massas" name="massas">
+                            <option value="original">Massa Original</option>
+                            <option value="fina">Massa Fina</option>
+                        </select>
+                    </div>
+                    <button>Encomendar </button>
+                </div>
+            </div>
+            
+            <div class="col col-2 ">
+                <div class="produto">
+                    <img src="Assets/images/Pizzas/Pizzas (3).png">
+                    <p>Pizza Fiambre</p>
+                    <div class="propriedades">
+                        <label for="tamanhos"></label>
+                        <select id="tamanhos" name="tamanhos">
+                            <option value="pequena">Pequena</option>
+                            <option value="media">Média</option>
+                            <option value="grande">Grande</option>
+                            <option value="familiar">Familiar</option>
+                        </select>
+                    </div>
+                    <div class="propriedades">
+                        <label for="massas"></label>
+                        <select id="massas" name="massas">
+                            <option value="original">Massa Original</option>
+                            <option value="fina">Massa Fina</option>
+                        </select>
+                    </div>
+                    <button>Encomendar </button>
+                </div>
+            </div>
+            
+            <div class="col col-2">
+                <div class="produto">
+                    <img src="Assets/images/Pizzas/Pizzas (4).png">
+                    <p>Pizza Atum</p>
+                    <div class="propriedades">
+                        <label for="tamanhos"></label>
+                        <select id="tamanhos" name="tamanhos">
+                            <option value="pequena">Pequena</option>
+                            <option value="media">Média</option>
+                            <option value="grande">Grande</option>
+                            <option value="familiar">Familiar</option>
+                        </select>
+                    </div>
+                    <div class="propriedades">
+                        <label for="massas"></label>
+                        <select id="massas" name="massas">
+                            <option value="original">Massa Original</option>
+                            <option value="fina">Massa Fina</option>
+                        </select>
+                    </div>
+                    <button>Encomendar </button>
+                </div>
+            </div>
 
-<select id="cars" name="cars">
-    <option value="volvo">Volvo</option>
-    <option value="saab">Saab</option>
-    <option value="mercedes">Mercedes</option>
-    <option value="audi">Audi</option>
-</select>
+            <div class="col col-2 ">
+                <div class="produto">
+                    <img src="Assets/images/Pizzas/Pizzas (5).png">
+                    <p>Pizza Vegetais</p>
+                    <div class="propriedades">
+                        <label for="tamanhos"></label>
+                        <select id="tamanhos" name="tamanhos">
+                            <option value="pequena">Pequena</option>
+                            <option value="media">Média</option>
+                            <option value="grande">Grande</option>
+                            <option value="familiar">Familiar</option>
+                        </select>
+                    </div>
+                    <div class="propriedades">
+                        <label for="massas"></label>
+                        <select id="massas" name="massas">
+                            <option value="original">Massa Original</option>
+                            <option value="fina">Massa Fina</option>
+                        </select>
+                    </div>
+                    <button>Encomendar </button>
+                </div>
+            </div>
+        </div>            
+        
+        <div class="row">
+            <div class="col col-2">
+                <div class="produto">
+                    <img src="Assets/images/Pizzas/Pizzas (6).png">
+                    <p>Pizza Tuga</p>
+                    <div class="propriedades">
+                        <label for="tamanhos"></label>
+                        <select id="tamanhos" name="tamanhos">
+                            <option value="pequena">Pequena</option>
+                            <option value="media">Média</option>
+                            <option value="grande">Grande</option>
+                            <option value="familiar">Familiar</option>
+                        </select>
+                    </div>
+                    <div class="propriedades">
+                        <label for="massas"></label>
+                        <select id="massas" name="massas">
+                            <option value="original">Massa Original</option>
+                            <option value="fina">Massa Fina</option>
+                        </select>
+                    </div>
+                    <button>Encomendar </button>
+                </div>
+            </div>
 
+            <div class="col col-2">
+                <div class="produto">
+                    <img src="Assets/images/Pizzas/Pizzas (7).png">
+                    <p>Pizza Ananás Crispy</p>
+                    <div class="propriedades">
+                        <label for="tamanhos"></label>
+                        <select id="tamanhos" name="tamanhos">
+                            <option value="pequena">Pequena</option>
+                            <option value="media">Média</option>
+                            <option value="grande">Grande</option>
+                            <option value="familiar">Familiar</option>
+                        </select>
+                    </div>
+                    <div class="propriedades">
+                        <label for="massas"></label>
+                        <select id="massas" name="massas">
+                            <option value="original">Massa Original</option>
+                            <option value="fina">Massa Fina</option>
+                        </select>
+                    </div>
+                    <button>Encomendar </button>
+                </div>
+            </div>
+
+            <div class="col col-2">
+                <div class="produto">
+                    <img src="Assets/images/Pizzas/Pizzas (8).png">
+                    <p>Pizza Frango BBQ</p>
+                    <div class="propriedades">
+                        <label for="tamanhos"></label>
+                        <select id="tamanhos" name="tamanhos">
+                            <option value="pequena">Pequena</option>
+                            <option value="media">Média</option>
+                            <option value="grande">Grande</option>
+                            <option value="familiar">Familiar</option>
+                        </select>
+                    </div>
+                    <div class="propriedades">
+                        <label for="massas"></label>
+                        <select id="massas" name="massas">
+                            <option value="original">Massa Original</option>
+                            <option value="fina">Massa Fina</option>
+                        </select>
+                    </div>
+                    <button>Encomendar </button>
+                </div>
+            </div>
+
+            <div class="col col-2">
+                <div class="produto">
+                    <img src="Assets/images/Pizzas/Pizzas (9).png">
+                    <p>Pizza Bacon e Fiambre</p>
+                    <div class="propriedades">
+                        <label for="tamanhos"></label>
+                        <select id="tamanhos" name="tamanhos">
+                            <option value="pequena">Pequena</option>
+                            <option value="media">Média</option>
+                            <option value="grande">Grande</option>
+                            <option value="familiar">Familiar</option>
+                        </select>
+                    </div>
+                    <div class="propriedades">
+                        <label for="massas"></label>
+                        <select id="massas" name="massas">
+                            <option value="original">Massa Original</option>
+                            <option value="fina">Massa Fina</option>
+                        </select>
+                    </div>
+                    <button>Encomendar </button>
+                </div>
+            </div>
+        </div>
+    </section><section class="row83">
+        <div class="row">
+            <div class="col col-2">
+                <div class="produto">
+                    <img src="Assets/images/Pizzas/Pizzas (2).png">
+                    <p class="">Pizza Ananás</p>
+                    <div class="propriedades">
+                        <label for="tamanhos"></label>
+                        <select id="tamanhos" name="tamanhos">
+                            <option value="pequena">Pequena</option>
+                            <option value="media">Média</option>
+                            <option value="grande">Grande</option>
+                            <option value="familiar">Familiar</option>
+                        </select>
+                    </div>
+                    <div class="propriedades">
+                        <label for="massas"></label>
+                        <select id="massas" name="massas">
+                            <option value="original">Massa Original</option>
+                            <option value="fina">Massa Fina</option>
+                        </select>
+                    </div>
+                    <button>Encomendar </button>
+                </div>
+            </div>
+            
+            <div class="col col-2 ">
+                <div class="produto">
+                    <img src="Assets/images/Pizzas/Pizzas (3).png">
+                    <p>Pizza Fiambre</p>
+                    <div class="propriedades">
+                        <label for="tamanhos"></label>
+                        <select id="tamanhos" name="tamanhos">
+                            <option value="pequena">Pequena</option>
+                            <option value="media">Média</option>
+                            <option value="grande">Grande</option>
+                            <option value="familiar">Familiar</option>
+                        </select>
+                    </div>
+                    <div class="propriedades">
+                        <label for="massas"></label>
+                        <select id="massas" name="massas">
+                            <option value="original">Massa Original</option>
+                            <option value="fina">Massa Fina</option>
+                        </select>
+                    </div>
+                    <button>Encomendar </button>
+                </div>
+            </div>
+            
+            <div class="col col-2">
+                <div class="produto">
+                    <img src="Assets/images/Pizzas/Pizzas (4).png">
+                    <p>Pizza Atum</p>
+                    <div class="propriedades">
+                        <label for="tamanhos"></label>
+                        <select id="tamanhos" name="tamanhos">
+                            <option value="pequena">Pequena</option>
+                            <option value="media">Média</option>
+                            <option value="grande">Grande</option>
+                            <option value="familiar">Familiar</option>
+                        </select>
+                    </div>
+                    <div class="propriedades">
+                        <label for="massas"></label>
+                        <select id="massas" name="massas">
+                            <option value="original">Massa Original</option>
+                            <option value="fina">Massa Fina</option>
+                        </select>
+                    </div>
+                    <button>Encomendar </button>
+                </div>
+            </div>
+
+            <div class="col col-2 ">
+                <div class="produto">
+                    <img src="Assets/images/Pizzas/Pizzas (5).png">
+                    <p>Pizza Vegetais</p>
+                    <div class="propriedades">
+                        <label for="tamanhos"></label>
+                        <select id="tamanhos" name="tamanhos">
+                            <option value="pequena">Pequena</option>
+                            <option value="media">Média</option>
+                            <option value="grande">Grande</option>
+                            <option value="familiar">Familiar</option>
+                        </select>
+                    </div>
+                    <div class="propriedades">
+                        <label for="massas"></label>
+                        <select id="massas" name="massas">
+                            <option value="original">Massa Original</option>
+                            <option value="fina">Massa Fina</option>
+                        </select>
+                    </div>
+                    <button>Encomendar </button>
+                </div>
+            </div>
+        </div>            
+        
+        <div class="row">
+            <div class="col col-2">
+                <div class="produto">
+                    <img src="Assets/images/Pizzas/Pizzas (6).png">
+                    <p>Pizza Tuga</p>
+                    <div class="propriedades">
+                        <label for="tamanhos"></label>
+                        <select id="tamanhos" name="tamanhos">
+                            <option value="pequena">Pequena</option>
+                            <option value="media">Média</option>
+                            <option value="grande">Grande</option>
+                            <option value="familiar">Familiar</option>
+                        </select>
+                    </div>
+                    <div class="propriedades">
+                        <label for="massas"></label>
+                        <select id="massas" name="massas">
+                            <option value="original">Massa Original</option>
+                            <option value="fina">Massa Fina</option>
+                        </select>
+                    </div>
+                    <button>Encomendar </button>
+                </div>
+            </div>
+
+            <div class="col col-2">
+                <div class="produto">
+                    <img src="Assets/images/Pizzas/Pizzas (7).png">
+                    <p>Pizza Ananás Crispy</p>
+                    <div class="propriedades">
+                        <label for="tamanhos"></label>
+                        <select id="tamanhos" name="tamanhos">
+                            <option value="pequena">Pequena</option>
+                            <option value="media">Média</option>
+                            <option value="grande">Grande</option>
+                            <option value="familiar">Familiar</option>
+                        </select>
+                    </div>
+                    <div class="propriedades">
+                        <label for="massas"></label>
+                        <select id="massas" name="massas">
+                            <option value="original">Massa Original</option>
+                            <option value="fina">Massa Fina</option>
+                        </select>
+                    </div>
+                    <button>Encomendar </button>
+                </div>
+            </div>
+
+            <div class="col col-2">
+                <div class="produto">
+                    <img src="Assets/images/Pizzas/Pizzas (8).png">
+                    <p>Pizza Frango BBQ</p>
+                    <div class="propriedades">
+                        <label for="tamanhos"></label>
+                        <select id="tamanhos" name="tamanhos">
+                            <option value="pequena">Pequena</option>
+                            <option value="media">Média</option>
+                            <option value="grande">Grande</option>
+                            <option value="familiar">Familiar</option>
+                        </select>
+                    </div>
+                    <div class="propriedades">
+                        <label for="massas"></label>
+                        <select id="massas" name="massas">
+                            <option value="original">Massa Original</option>
+                            <option value="fina">Massa Fina</option>
+                        </select>
+                    </div>
+                    <button>Encomendar </button>
+                </div>
+            </div>
+
+            <div class="col col-2">
+                <div class="produto">
+                    <img src="Assets/images/Pizzas/Pizzas (9).png">
+                    <p>Pizza Bacon e Fiambre</p>
+                    <div class="propriedades">
+                        <label for="tamanhos"></label>
+                        <select id="tamanhos" name="tamanhos">
+                            <option value="pequena">Pequena</option>
+                            <option value="media">Média</option>
+                            <option value="grande">Grande</option>
+                            <option value="familiar">Familiar</option>
+                        </select>
+                    </div>
+                    <div class="propriedades">
+                        <label for="massas"></label>
+                        <select id="massas" name="massas">
+                            <option value="original">Massa Original</option>
+                            <option value="fina">Massa Fina</option>
+                        </select>
+                    </div>
+                    <button>Encomendar </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer txt-center">
+        <div>
+            <div>
+            <div class="copyright">
+                &copy; Copyright <strong><span>PizzaPlace</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                Designed by <span class="nomes">Marco Cândido & Miguel Barroso</span></a>
+            </div>
+            </div>
+            <div>
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i>></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
 </body>
-</html>
