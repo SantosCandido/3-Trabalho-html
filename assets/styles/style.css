@@ -117,6 +117,7 @@ body{
 }
 
 
+/* home html */
 /* nav */
 .nav_bar{
     display: flex;
@@ -178,11 +179,6 @@ body{
 }
 
 
-.empresa:hover{
-    cursor: pointer;   
-}
-
-
 /* banner */
 .home_banner{
     background-image: url("/assets/images/banner.png");
@@ -194,6 +190,9 @@ body{
 
 
 .home_banner h1, .home_banner h3{
+    font-family: "Protest Revolution", sans-serif;;
+    font-weight: 400;
+    text-shadow: 2px 2px 2px black;
     font-size: 3rem;
     color: white;
     text-shadow: 0 0 5px #fff, 0 0 10px black, 0 0 15px black, 0 0 20px black, 0 0 25px black, 0 0 30px black, 0 0 35px black;
@@ -202,13 +201,13 @@ body{
 
 .home_banner h1{
     font-size: 5rem;
-    margin-left: 17.5%;
+    margin-left: 20%;
     padding-top: 4%;   
 }
 
 
 .home_banner h3{
-    margin-left: 58%;
+    margin-left: 60%;
 }
 
 
@@ -225,7 +224,7 @@ body{
 /* separadores */
 .separador{
     width: 100%;
-    height: 0.01rem;
+    height: 0.12rem;
     background-color: black;
     margin: 6% 0%;
 }
@@ -233,19 +232,55 @@ body{
 
 /* produtos */
 .best_sellers{
-    height: 30rem;
+    height: 28.8rem;
     border-radius: 12px;
-    background-color: var(--corverescuro);
+    background-image: url("../images/best_sellers.png");
+    background-size: cover;
     box-shadow: 2px 3px rgba(0,0,0,.15);
     margin-right: 6%;
     margin-bottom: 3%;
+    padding-top: 6%;
 }
 
+
 .best_sellers p{
-    font-size: 4rem;
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
     color: white;
-    height: 30rem;
     margin: 0%;
+}
+
+
+.best_sellers_pizza p{
+    color: var(--coramar);
+    font-size: 3.5rem;
+    font-weight: bold;
+    font-style: italic;
+    margin: -3%;
+}
+
+
+.best_sellers_button{
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 400;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    background-color: var(--coramar);
+    padding: 1.5%;
+    margin: 78% 35% 0% 35%;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+
+.best_sellers_button a{
+    color: #ffffff;
+    text-decoration: none;
 }
 
 
@@ -262,10 +297,10 @@ body{
 
 .seller_icon{
     height: 30rem;
-    background-image: url("../images/star.png");
+    background-image: url("../images/seal.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 28rem;
+    background-size: 20rem;
     margin-left: 60%;
     transform: rotate(20deg);
 }
@@ -278,8 +313,8 @@ body{
     text-align: center;
     font-size: 1.7rem;
     color: white;
-    padding-top: 38%;
-    text-shadow: 0 0 5px red, 0 0 10px red;
+    padding-top: 40%;
+    text-shadow: 0 0 5px var(--corverd), 0 0 10px var(--corverd);
 }
 
 
@@ -354,54 +389,125 @@ body{
 
 
 
-/*  */
+/* fidelização */
 .f1{
-    border-radius: 12px;
-    box-shadow: 2px 3px rgba(0,0,0,.15);
-    padding: 9% 1% 12% 1%;
-    background-color: var(--corverd);
-    margin-right: 2.5%;
-}
-.f1 p{
-   
+    font-family: "Protest Revolution", sans-serif;;
+    font-weight: 400;
+    text-shadow: 2px 2px 2px black;
+    height: 30rem;
     text-align: center;
     font-size: 3.5rem;
     color: white;
+    border-radius: 12px;
+    box-shadow: 2px 3px rgba(0,0,0,.15);
+    padding: 9% 3% 0% 3%;
+    background-color: var(--corverd);
+    margin: 0% 3% 0% 6%;
 }
 .f2{
+    font-family: "Protest Revolution", sans-serif;;
+    font-weight: 400;
+    text-shadow: 2px 2px 2px black;
+    height: 30rem;
     border-radius: 12px;
     box-shadow: 2px 3px rgba(0,0,0,.15);
-    padding: 9% 1% 9% 1%;
+    padding: 9% 7% 0% 7%;
     text-align: center;
     font-size: 3.5rem;
     color: white;
-    margin: 0 2.5% 0 2.5%;
+    margin: 0 3% 0 3%;
     background-color: var(--coramar);
 }
 
 .f3{
+    font-family: "Protest Revolution", sans-serif;;
+    font-weight: 400;
+    text-shadow: 2px 2px 2px black;
+    height: 30rem;
     color: white;
     border-radius: 12px;
     box-shadow: 2px 3px rgba(0,0,0,.15);
-    padding: 10%;
-    margin-left: 2.5%;
+    padding: 9% 10% 0% 10%;
+    margin-left: 3%;
+    margin-right: 6%;
     background-color: var(--corverclaro);
 }
-.f3 input{
-    border-radius: 12px;
-    margin: 2%;
-    border: 0;
-    font-size: 2rem;;
-    background-color: rgba(255, 255, 255, 0.5);
-    color: white;
-}
+
+
 .f3 p{
+
+    display: inline;
+    text-align: center;
     font-size: 1.1rem;
 }
 
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 80%;
+}
 
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid white;
+  outline: 0;
+  font-size: 1.3rem;
+  color: white;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: white;
+}
+
+.form__field:focus {
+  ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: white;
+    font-weight:700;    
+    }
+  padding-bottom: 6px;  
+  font-weight: 700;
+  border-width: 3px;
+  border-color: white;
+  border-image-slice: 1;
+}
+
+.checkbox{
+    margin-top: 7%;
+}
 .submit_button{
-    margin-top: 3%;
+    font-family: "Protest Revolution", sans-serif;;
+    font-weight: 400;
+    text-shadow: 2px 2px 2px black;
+    margin:0 auto;
+    display:block;
+    padding: 3%;
+    margin-top: 7%;
     background-color: var(--corverd);
     border-radius: 12px;
     color: white;
@@ -411,8 +517,66 @@ body{
 .submit_button:hover{
     background-color: #7DAB94;
 }
+.footer{
+    margin-top: 3%;
+}
+.footer i{
+    color: black;
+}
+
+/* banner lojas */
+.banner_lojas{
+    font-family: "Protest Revolution", sans-serif;;
+    font-weight: 400;
+    color: white;
+    height: 25rem;
+    border-radius: 12px;
+    background-image: url("/assets/images/banner3pizzas.png");
+    background-size: cover;
+    text-shadow: 2px 2px 2px black;
+}
+
+.banner_lojas h1{
+    padding-top: 5%;
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 0;
+}
 
 
+.banner_lojas p{
+    margin-bottom: 0;
+    margin-top: 5%;
+    padding-left: 30%;
+    font-size: 2rem;
+}
+
+.banner_lojas i{
+    font-size: 7rem;
+    margin-left: 58%;
+    margin-top: -6%;
+    color: white;
+}
+
+.banner_lojas i:hover{
+    font-size: 8rem;
+    margin-left: 57.5%;
+}
+
+.numbers{
+    
+    margin-top: -4.5% !important;
+    padding-left: 61.5% !important;
+    font-weight: bold;
+}
+
+.stores{
+    margin-top: -0.4% !important;
+    padding-left: 59.9% !important;
+    font-weight: bold;
+    color: black;
+    text-shadow: none;
+}
 
 /* PAGINA PRODUTOS*/
 .menu_title{
@@ -421,4 +585,122 @@ body{
     color: var(--corverescuro);
     margin:0 0 0 3%;
     font-size: 3.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* localizacoes html */
+.mapas{
+    position: relative;
+    width: 100%;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 2px 3px rgba(0,0,0,.15);
+    margin-top: -17%;
+    margin-bottom: 2%;
+}
+
+
+.localizacao{
+    margin-left: 100rem;
+}
+
+
+.mapa_direita{
+    margin-bottom: 2%;
+}
+
+
+/* Style for the dropdown button */
+.mapas_btn {
+    cursor: pointer;
+}
+
+
+/* Style for the dropdown content (initially hidden) */
+.mapas_content {
+    display: none;
+}
+
+
+/* Show dropdown content when the dropdown button is hovered */
+.mapas_btn:hover + .mapas_content {
+    display: block;
+}
+
+
+/* Hide dropdown content when it is not being hovered */
+.mapas_content:hover {
+    display: block;
+}
+
+
+/* Hide dropdown content when neither the button nor the content is hovered */
+.mapas_btn:not(:hover) + .mapas_content:not(:hover) {
+    display: none;
+}
+
+
+
+.dropdown_background{
+    width: 100%;
+    height: 15rem;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 2px 3px rgba(0,0,0,.15);
+    margin-bottom: 1%;
 }

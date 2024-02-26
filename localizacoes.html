@@ -1,71 +1,125 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Convite da Pizzaria Bella Napoli</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f8f8;
-        }
-        .container {
-            width: 80%;
-            margin: 20px auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        h1 {
-            color: #c62828;
-            font-size: 2.5rem;
-        }
-        p {
-            color: #666;
-            font-size: 1.2rem;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-        .btn {
-            display: inline-block;
-            background-color: #c62828;
-            color: #fff;
-            padding: 15px 30px;
-            text-decoration: none;
-            border-radius: 30px;
-            font-size: 1.2rem;
-            transition: background-color 0.3s ease;
-            cursor: pointer;
-        }
-        .btn:hover {
-            background-color: #8e0000;
-        }
-        .pizza-img {
-            width: 200px;
-            margin-bottom: 30px;
-            animation: pulse 2s infinite alternate;
-        }
-        @keyframes pulse {
-            from {
-                transform: scale(1);
-            }
-            to {
-                transform: scale(1.1);
-            }
-        }
-    </style>
+    <title>PizzaPlace</title>
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.5.1-web/css/all.css">
+    <link rel="icon" type="image/x-icon" href="/assets/images/pizza-slice-solid.svg">
+    <link rel="stylesheet" href="./assets/styles/root.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="localizacoes.html">
+    <link rel="stylesheet" href="especiais.html">
+    <link rel="stylesheet" href="produtos.html">    
 </head>
+
 <body>
-    <div class="container">
-        <img src="https://i.imgur.com/nBr7TgE.png" alt="Pizza" class="pizza-img">
-        <h1>Convite da Pizzaria Bella Napoli</h1>
-        <p>Venha saborear as melhores pizzas da cidade na Bella Napoli! Nossa seleção de ingredientes frescos e nossa massa artesanal farão você se apaixonar.</p>
-        <p>Estamos prontos para recebê-lo em nossas lojas. Não perca tempo, traga sua família e amigos e desfrute de uma deliciosa refeição conosco!</p>
-        <a href="#" class="btn">Ver Localizações</a>
-    </div>
+    <nav class="nav_bar">
+        <ul class="row80">
+            <a class="empresa ecra_nav" href="index.html">Pizza<i class="fa-solid fa-pizza-slice"></i><br>Place</a>   
+            <div class="ecra1200">
+                <a class="navigation home" href="index.html">Home</a>
+                <a class="navigation" href="produtos.html">Produtos</a>
+                <a class="navigation" href="especiais.html">Especiais</a>
+                <a class="navigation" href="localizacoes.html">Localizações</a>
+                <a class="navigation" href="#popup-box">Login</a>
+            </div> 
+        </ul>        
+    </nav>
+
+    <section>
+        <div id="popup-box" class="box">
+            <div class="box_background">
+                <div class="conteudo_box">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password">
+                    <button type="submit">Login</button>
+                </div>
+                <a href="#" class="box-close">
+                    ×
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <main class="row80" style="margin-top: 5%;">
+        <div class="separador"></div>
+       
+        <section class="convite">
+            <h1>Convite da Pizzaria Pizza<i class="fa-solid fa-pizza-slice"></i>Place</h1>
+            <p>Venha saborear as melhores pizzas da cidade nas nossas pizzarias! A nossa seleção de ingredientes frescos e massa artesanal farão apaixonar-se e desejar por mais.</p>    
+        </section>
+
+        <section class="row">
+            <div class="mapas_btn dropdown_background">
+                <div>
+                    Loja Lisboa
+                </div>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d24897.055730106935!2d-9.14579808496038!3d38.73773382786996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sLisboa%20pizzaria!5e0!3m2!1spt-PT!2spt!4v1708897303072!5m2!1spt-PT!2spt" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            
+                </div>
+            </div> 
+            <div class="mapas_content mapas">
+                <div class="col col-4 localizacao">
+                    <h1>Loja Lisboa</h1>
+                    <p>
+                        En 249 Zi Trajouce, Aboboda
+                        2785-035 Aboboda
+                        Aberto hoje das 12:00 às 15:00
+                        e das 18:00 às 23:00
+                        219251400
+                    </p>
+                </div>
+                <div class="col col-6 mapa_direita">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d24897.055730106935!2d-9.14579808496038!3d38.73773382786996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sLisboa%20pizzaria!5e0!3m2!1spt-PT!2spt!4v1708906164619!5m2!1spt-PT!2spt" width="1000" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        
+                </div>    
+            </section>
+
+        <section class="row">
+            <div class="mapas_btn dropdown_background">Loja Lisboa</div>
+            <div class="mapas_content mapas">
+                <div class="col col-6 localizacao">
+                    <h1>Loja Lisboa</h1>
+                    <p>
+                        En 249 Zi Trajouce, Aboboda
+                        2785-035 Aboboda
+                        Aberto hoje das 12:00 às 15:00
+                        e das 18:00 às 23:00
+                        219251400
+                    </p>
+                </div>
+                <div class="col col-4 mapa_direita">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d24897.055730106935!2d-9.14579808496038!3d38.73773382786996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sLisboa%20pizzaria!5e0!3m2!1spt-PT!2spt!4v1708897303072!5m2!1spt-PT!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                </div>
+                </div>        
+            </div>
+        </section>
+
+        
+
+    </main>            
 </body>
+
+<footer class="footer txt-center">
+    <div>
+        <div>
+        <div class="copyright">
+            &copy; Copyright <strong><span>PizzaPlace</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+            Designed by <span class="nomes">Marco Cândido & Miguel Barroso</span></a>
+        </div>
+        </div>
+        <div>
+        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </div>
+</footer>
+          
 </html>

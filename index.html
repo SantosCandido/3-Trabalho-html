@@ -60,7 +60,14 @@
             <div class="row">
                 <div class="col col-3">
                     <div class="best_sellers">
-                        <p>As Favoritas dos Members</p>
+                        <p>As nossas</p>
+                        <div class="best_sellers_pizza">
+                            <p>PIZZAS</p>
+                        </div>
+                        <p>mais vendidas</p>
+                        <div class="best_sellers_button">
+                            <a href="produtos.html">🡇 Order Now</a>
+                        </div>
                     </div>
                 </div>
 
@@ -276,12 +283,15 @@
             </div>
         </section>
 
-        <section class="row80 Fidelizacao">
+        <section class="row80">
             <div class="separador"></div>
+        </section>
+
+        <section class="row83 Fidelizacao">
             <div>
                 <div class="col col-4">
                     <div class="f1">
-                    <p>QUERES GANHAR DESCONTOS EXCLUSIVOS?</p>
+                    QUERES GANHAR DESCONTOS EXCLUSIVOS?
                     </div>
                 </div>
                 <div class="col col-4">
@@ -291,13 +301,31 @@
                 </div>
                 <div class="col col-4">
                     <div class="f3">
-                        <input type="text" id="name" name="name" placeholder="Nome"><br>
-                        <input type="text" id="email" name="email" placeholder="E-mail"><br>
-                        <input class="f3-checkbox" type="checkbox" name="terms" required="required">
-                        <p>Li e aceito as Politicas de Privacidade</p><br>
+                        <div class="form__group field">
+                            <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
+                            <label for="name" class="form__label">Nome</label>
+                        </div>
+                        <div class="form__group field">
+                            <input type="input" class="form__field" placeholder="Name" name="email" id='email' required />
+                            <label for="email" class="form__label">E-mail</label>
+                        </div>
+                        <div class="checkbox">
+                            <input class="f3-checkbox" type="checkbox" name="terms" required="required">
+                            <p>Li e aceito as Politicas de Privacidade</p><br>
+                        </div>
                         <button class="submit_button">Submeter</button>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section class="row80">
+            <div class="banner_lojas">
+                <h1>Venha visitar as nossas lojas!</h1>
+                <p>Descubra onde nos encontrar</p>
+                <a href="localizacoes.html"><i class="fa-solid fa-store"></i></a>
+                <p class="numbers">5</p>
+                <p class="stores">Lojas</p>
+                
             </div>
         </section>
     </main>            
