@@ -1,10 +1,67 @@
+<!DOCTYPE html>
+
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PizzaPlace</title>
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.5.1-web/css/all.css">
+    <link rel="icon" type="image/x-icon" href="/assets/images/pizza-slice-solid.svg">
+    <link rel="stylesheet" href="./assets/styles/root.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="localizacoes.html">
+    <link rel="stylesheet" href="especiais.html">
+    <link rel="stylesheet" href="produtos.html">    
 </head>
-<body>
-    
+    <nav class="nav_bar">
+        <ul class="row80">
+            <a class="empresa ecra_nav" href="index.html">Pizza<i class="fa-solid fa-pizza-slice"></i><br>Place</a>   
+            <div class="ecra1200">
+                <a class="navigation home" href="index.html">Home</a>
+                <a class="navigation" href="produtos.html">Produtos</a>
+                <a class="navigation" href="especiais.html">Especiais</a>
+                <a class="navigation" href="localizacoes.html">Localizações</a>
+                <a class="navigation" href="#popup-box">Login</a>
+            </div> 
+        </ul>        
+    </nav>
+
+    <section>
+        <div id="popup-box" class="box">
+            <div class="box_background">
+                <div class="conteudo_box">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password">
+                    <button type="submit">Login</button>
+                </div>
+                <a href="#" class="box-close">
+                    ×
+                </a>
+            </div>
+        </div>
+    </section>
+    <main class="row80" style="margin-top: 8%;">
+        <section class="banner_especiais">
+            Menus Especiais
+        </section>
+
+        <div class="separador"></div>
+        
+        <section class="produto_especiais">
+                <img src="Assets/images/promos/promo1.png">
+                <p class="">Pizza Ananás</p>
+                <div class="propriedades_esp">
+                    <label for="massas"></label>
+                    <select id="massas" name="massas">
+                        <option value="original">Massa Original</option>
+                        <option value="fina">Massa Fina</option>
+                    </select>
+                </div>
+                <button>Encomendar </button>
+        </section>
+    </main>
 </body>
 </html>
