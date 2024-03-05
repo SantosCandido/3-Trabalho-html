@@ -388,7 +388,6 @@ body{
 }
 
 
-
 /* fidelização */
 .f1{
     font-family: "Protest Revolution", sans-serif;;
@@ -579,7 +578,7 @@ body{
     text-shadow: none;
 }
 
-/* PAGINA PRODUTOS*/
+/* produtos html */
 
 .banner_produtos{
     padding: 10% 0 0 40%;
@@ -595,27 +594,79 @@ body{
 }
     
 
+.produto_produtos{
+    border-radius: 12px;
+    background-image: url("../images/localizacoes.png");
+    box-shadow: 2px 3px rgba(0,0,0,.15);
+    margin: 6%;
+}
 
 
+.produto_produtos img{
+    border-radius: 12px;
+    padding-top: 10%;
+    margin: 10%;
+    display: block;
+    width: 80%;
+}
 
 
+.produto_produtos p{
+    height: 10rem;
+    font-family: "Fredericka the Great", serif;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: left;
+    margin: 0% 10%;
+    color: var(--coramar);
+}
 
 
+.produto_produtos button{
+    font-family: "Fredericka the Great", serif;
+    font-weight: 400;
+    color: #fff;
+    border: 0;
+    background-color: var(--corverd);
+    width: 85%;
+    height: 3rem;
+    margin-left: 8%;
+    margin-bottom: 8%;
+    font-size: 1.3rem;
+    border-radius: 12px;
+    cursor: pointer;
+}
 
 
+.produto_produtos button:hover{
+    background-color: #7DAB94;
+    color: black;
+}
 
 
+.propriedades_produto{
+    margin-bottom: 4%;
+}
 
 
+.propriedades_produto select{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    border: 1px solid grey;
+    border-radius: 12px;
+    width: 84%;
+    padding: 2%;
+    margin-left: 8%;
+    appearance: none;
+    background-image: url("../images/arrow.png");
+    background-size: 1rem;
+    background-repeat: no-repeat;
+    background-position: 97%;
+    cursor: pointer;
+}
 
 
-
-
-
-
-
-
-/*Especiais*/
+/* especiais html */
 .banner_especiais{
     padding: 10% 0 0 40%;
     font-size: 6rem;
